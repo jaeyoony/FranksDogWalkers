@@ -13,5 +13,7 @@ class Appointment(models.Model):
 	dog4 = models.ForeignKey(Dog, on_delete=models.SET_NULL, null=True, related_name = "+")
 	dog5 = models.ForeignKey(Dog, on_delete=models.SET_NULL, null=True, related_name = "+")
 
-	startime = models.TimeField()
+	creator = models.ForeignKey(User, on_delete= models.CASCADE)
+
+	startime = models.DateTimeField()
 	startloc = models.TextField()

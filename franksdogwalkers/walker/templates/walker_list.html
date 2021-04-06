@@ -4,7 +4,7 @@
 	<h2>List of Franks Walkers: </h2>
 	<ul>
 		{% for w in object_list %}
-		<li><a href="/walkers/{{w.pk}}">{{w.username}} </a></li>
+		<li><a href="{{w.get_absolute_url}}">{{w.first_name}} {{w.last_name}} </a></li>
 		{% endfor %}
 	</ul>
 {% endblock %}

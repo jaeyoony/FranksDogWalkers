@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h2>{{object.firstname}} {{object.lastname}}</h2>
+	<p>
+		Owner name: {{object.owner.username}}<br>
+		Rating: {{object.rating}}<br>
+		Breed: {{object.breed}}<br>
+		Size: {{object.size}}<br>
+	</p>
+
+{% endblock %}

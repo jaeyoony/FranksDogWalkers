@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'user',
     'walker', 
     'dog', 
-    'appointment'
+    'appointment', 
+    'review',
 ]
 
 MIDDLEWARE = [

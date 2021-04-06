@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
+{% if error %}
+	<h4> Error : {{error}}</h4>
+{% endif %}
 <form action='' method= 'POST'>
 	{% csrf_token %}
 	{{form.as_p}}

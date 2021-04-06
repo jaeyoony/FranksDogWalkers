@@ -2,9 +2,15 @@
 
 {% block content %}
 <h2> Appointment list </h2>
-<p> 
-	should have a list of appts. here
-</p>
+	{% if appointments %}
+		{% for a in appointments %}
+		<ul>
+			<li> {{a}} </li>
+		</ul>
+		{% endfor %}
+	{% else %}
+		<p> you have no sceduled appointments! </p>
+	{% endif %}
 
 <a href="add">Schedule Walk</a>
 {% endblock %}

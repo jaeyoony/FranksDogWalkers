@@ -32,8 +32,3 @@ class UserDetailView(DetailView):
 			raise Http404("User does not exist")
 		return user.profile
 
-
-# # view for user creation
-# class SignupView(View): 
-
-	# every time a user is created, make sure to also create that User's profile

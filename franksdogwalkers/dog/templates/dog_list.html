@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h2>Your Dogs: </h2>
+	<ul>
+		{% for d in dogs %}
+			<li> <a href={{d.get_absolute_url}}>{{d.firstname}}</a></li>
+		{% endfor %}
+	</ul>
+	<a href = "/dogs/add">Add new Dog</a>
+{% endblock %}
