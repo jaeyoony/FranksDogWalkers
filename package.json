@@ -1,0 +1,19 @@
+{
+  "name": "franksdogwalkers",
+  "version": "1.0.0",
+  "description": "Ruckus marketing take home assesment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaeyoony/FranksDogWalkers.git"
+  },
+  "author": "Jay Yoo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaeyoony/FranksDogWalkers/issues"
+  },
+  "homepage": "https://github.com/jaeyoony/FranksDogWalkers#readme"
+}
